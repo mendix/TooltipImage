@@ -1,0 +1,8 @@
+Buildfile: C:\Projects\Tickets - Projects\100705 - Tooltip trigger\MX5.6.2\deployment\build_webui.xml
+
+clean:
+
+BUILD SUCCESSFUL
+Total time: 0 seconds
+
+

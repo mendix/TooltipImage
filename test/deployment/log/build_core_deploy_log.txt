@@ -1,0 +1,9 @@
+Buildfile: C:\Projects\Tickets - Projects\100705 - Tooltip trigger\TooltipImage\test\deployment\build_core.xml
+
+deploy:
+    [unzip] Expanding: C:\Program Files (x86)\Mendix\5.6.2\modeler\deployment.mxz into C:\Projects\Tickets - Projects\100705 - Tooltip trigger\TooltipImage\test\deployment
+
+BUILD SUCCESSFUL
+Total time: 0 seconds
+
+

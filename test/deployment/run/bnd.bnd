@@ -1,0 +1,7 @@
+Private-Package: system, com.mendix.core, administration.proxies, administration.proxies.microflows, com.mendix.core, communitycommons, communitycommons.actions, communitycommons.proxies, communitycommons.proxies.constants, communitycommons.proxies.microflows, myfirstmodule.proxies, system, system.actions, system.proxies, system.proxies.microflows
+Import-Package: *;resolution:=optional
+Service-Component: *
+Include-Resource: ../../userlib/;recursive:=true
+Bundle-ClassPath: .,antisamy-1.4.4.jar, com.google.guava-14.0.1.jar, com.mendix.webservices-rt-2.1.0.jar, com.springsource.org.apache.commons.httpclient-3.1.0.jar, com.springsource.org.apache.commons.lang-2.5.0.jar, com.springsource.org.apache.commons.logging-1.1.1.jar, com.sun.mail.javax.mail-1.4.5.jar, commons-codec-1.3.jar, commons-fileupload-1.2.1.jar, commons-io-2.3.jar, commons-lang-2.5.jar, guava-12.0.jar, javax.servlet-3.0.0.jar, joda-time-1.6.2.jar, nekohtml.jar, org.apache.servicemix.bundles.avalon-framework-4.3.1.jar, org.apache.servicemix.bundles.batik-1.7.0.jar, org.apache.servicemix.bundles.xalan-2.7.1.jar, org.apache.servicemix.bundles.xerces-2.11.0.jar, org.glassfish.metro.webservices-api-osgi-2.2.0.jar
+Bundle-Name: test
+Bundle-SymbolicName: project

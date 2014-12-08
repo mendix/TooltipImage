@@ -1,0 +1,17 @@
+{
+  "Configuration": {
+    "DatabaseName": "default",
+    "DatabasePassword": "",
+    "DatabaseType": "HSQLDB",
+    "DatabaseHost": "",
+    "DatabaseUserName": "",
+    "DatabaseUseIntegratedSecurity": "False",
+    "ApplicationRootUrl": "http://localhost:8080/",
+    "ScheduledEventExecution": "Specified",
+    "MyScheduledEvents": "CommunityCommons.releaseOldLocks"
+  },
+  "Constants": {
+    "CommunityCommons.enableReleaseLockEvent": "True"
+  },
+  "AdminPassword": null
+}
