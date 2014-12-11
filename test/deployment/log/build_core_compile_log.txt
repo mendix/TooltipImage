@@ -1,8 +1,8 @@
-Buildfile: C:\Projects\Tickets - Projects\100705 - Tooltip trigger\TooltipImage\test\deployment\build_core.xml
+Buildfile: C:\Projects\GitHub\TooltipImage\test\deployment\build_core.xml
 
 compile:
-    [javac] Compiling 2 source files to C:\Projects\Tickets - Projects\100705 - Tooltip trigger\TooltipImage\test\deployment\run\bin
-    [javac] Note: C:\Projects\Tickets - Projects\100705 - Tooltip trigger\TooltipImage\test\javasource\com\mendix\core\Core.java uses unchecked or unsafe operations.
+    [javac] Compiling 2 source files to C:\Projects\GitHub\TooltipImage\test\deployment\run\bin
+    [javac] Note: C:\Projects\GitHub\TooltipImage\test\javasource\com\mendix\core\Core.java uses unchecked or unsafe operations.
     [javac] Note: Recompile with -Xlint:unchecked for details.
 
 build:

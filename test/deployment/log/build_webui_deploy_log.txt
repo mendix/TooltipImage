@@ -1,7 +1,7 @@
-Buildfile: C:\Projects\Tickets - Projects\100705 - Tooltip trigger\TooltipImage\test\deployment\build_webui.xml
+Buildfile: C:\Projects\GitHub\TooltipImage\test\deployment\build_webui.xml
 
 deploy:
-    [unzip] Expanding: C:\Projects\Tickets - Projects\100705 - Tooltip trigger\TooltipImage\test\widgets\TooltipImage.mpk into C:\Projects\Tickets - Projects\100705 - Tooltip trigger\TooltipImage\test\deployment\web\widgets
+    [unzip] Expanding: C:\Projects\GitHub\TooltipImage\test\widgets\TooltipImage.mpk into C:\Projects\GitHub\TooltipImage\test\deployment\web\widgets
 
 BUILD SUCCESSFUL
 Total time: 0 seconds
