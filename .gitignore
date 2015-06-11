@@ -1,7 +1,7 @@
+test/deployment/
 test/javasource/**/proxies/
 test/javasource/com/
 test/javasource/system/
-test/deployment/**
 test/.classpath
 test/.project
 *.launch
