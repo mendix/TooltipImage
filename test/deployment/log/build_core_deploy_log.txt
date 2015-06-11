@@ -1,9 +1,10 @@
-Buildfile: C:\Projects\GitHub\TooltipImage\test\deployment\build_core.xml
+Buildfile: C:\Mendix\Widgets\GitHub\TooltipImage\test\deployment\build_core.xml
 
 deploy:
-    [unzip] Expanding: C:\Program Files (x86)\Mendix\5.6.2\modeler\deployment.mxz into C:\Projects\GitHub\TooltipImage\test\deployment
+    [unzip] Expanding: C:\Program Files\Mendix\5.16.0\modeler\deployment.mxz into C:\Mendix\Widgets\GitHub\TooltipImage\test\deployment
 
 BUILD SUCCESSFUL
 Total time: 0 seconds
+
 
 

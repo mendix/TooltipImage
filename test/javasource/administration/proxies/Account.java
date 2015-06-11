@@ -25,7 +25,18 @@ public class Account extends system.proxies.User
 	 */
 	public enum MemberNames
 	{
-		FullName("FullName");
+		FullName("FullName"),
+		Name("Name"),
+		Password("Password"),
+		LastLogin("LastLogin"),
+		Blocked("Blocked"),
+		Active("Active"),
+		FailedLogins("FailedLogins"),
+		WebServiceUser("WebServiceUser"),
+		IsAnonymous("IsAnonymous"),
+		UserRoles("System.UserRoles"),
+		User_Language("System.User_Language"),
+		User_TimeZone("System.User_TimeZone");
 
 		private String metaName;
 
@@ -51,16 +62,6 @@ public class Account extends system.proxies.User
 		super(context, accountMendixObject);
 		if (!Core.isSubClassOf("Administration.Account", accountMendixObject.getType()))
 			throw new IllegalArgumentException("The given object is not a Administration.Account");
-	}
-
-	/**
-	 * @deprecated Use 'new Account(Context)' instead. Note that the constructor will not insert the new object in the database.
-	 */
-	@Deprecated
-	public static administration.proxies.Account create(IContext context) throws CoreException
-	{
-		IMendixObject mendixObject = Core.create(context, "Administration.Account");
-		return new administration.proxies.Account(context, mendixObject);
 	}
 
 	/**

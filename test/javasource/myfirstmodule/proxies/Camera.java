@@ -64,16 +64,6 @@ public class Camera
 	}
 
 	/**
-	 * @deprecated Use 'new Camera(Context)' instead. Note that the constructor will not insert the new object in the database.
-	 */
-	@Deprecated
-	public static myfirstmodule.proxies.Camera create(IContext context) throws CoreException
-	{
-		IMendixObject mendixObject = Core.create(context, "MyFirstModule.Camera");
-		return new myfirstmodule.proxies.Camera(context, mendixObject);
-	}
-
-	/**
 	 * @deprecated Use 'Camera.load(IContext, IMendixIdentifier)' instead.
 	 */
 	@Deprecated

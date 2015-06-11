@@ -63,16 +63,6 @@ public class TimerItems
 	}
 
 	/**
-	 * @deprecated Use 'new TimerItems(Context)' instead. Note that the constructor will not insert the new object in the database.
-	 */
-	@Deprecated
-	public static myfirstmodule.proxies.TimerItems create(IContext context) throws CoreException
-	{
-		IMendixObject mendixObject = Core.create(context, "MyFirstModule.TimerItems");
-		return new myfirstmodule.proxies.TimerItems(context, mendixObject);
-	}
-
-	/**
 	 * @deprecated Use 'TimerItems.load(IContext, IMendixIdentifier)' instead.
 	 */
 	@Deprecated

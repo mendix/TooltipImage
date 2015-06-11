@@ -62,16 +62,6 @@ public class Settings
 	}
 
 	/**
-	 * @deprecated Use 'new Settings(Context)' instead. Note that the constructor will not insert the new object in the database.
-	 */
-	@Deprecated
-	public static myfirstmodule.proxies.Settings create(IContext context) throws CoreException
-	{
-		IMendixObject mendixObject = Core.create(context, "MyFirstModule.Settings");
-		return new myfirstmodule.proxies.Settings(context, mendixObject);
-	}
-
-	/**
 	 * @deprecated Use 'Settings.load(IContext, IMendixIdentifier)' instead.
 	 */
 	@Deprecated

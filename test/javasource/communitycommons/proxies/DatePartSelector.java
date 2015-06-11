@@ -6,9 +6,9 @@ package communitycommons.proxies;
 
 public enum DatePartSelector
 {
-	year(new String[][] { new String[] { "en_US", "year" } }),
-	month(new String[][] { new String[] { "en_US", "month" } }),
-	day(new String[][] { new String[] { "en_US", "day" } });
+	year(new String[][] { new String[] { "en_US", "year" }, new String[] { "nl_NL", "jaar" } }),
+	month(new String[][] { new String[] { "en_US", "month" }, new String[] { "nl_NL", "maand" } }),
+	day(new String[][] { new String[] { "en_US", "day" }, new String[] { "nl_NL", "dag" } });
 
 	private java.util.Map<String,String> captions;
 

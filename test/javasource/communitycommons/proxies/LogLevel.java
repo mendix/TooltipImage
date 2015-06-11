@@ -6,12 +6,12 @@ package communitycommons.proxies;
 
 public enum LogLevel
 {
-	Trace(new String[][] { new String[] { "en_US", "Trace" } }),
-	Debug(new String[][] { new String[] { "en_US", "Debug" } }),
-	Info(new String[][] { new String[] { "en_US", "Info" } }),
-	Warning(new String[][] { new String[] { "en_US", "Warning" } }),
-	Error(new String[][] { new String[] { "en_US", "Error" } }),
-	Critical(new String[][] { new String[] { "en_US", "Critical" } });
+	Trace(new String[][] { new String[] { "en_US", "Trace" }, new String[] { "nl_NL", "Trace" } }),
+	Debug(new String[][] { new String[] { "en_US", "Debug" }, new String[] { "nl_NL", "Debug" } }),
+	Info(new String[][] { new String[] { "en_US", "Info" }, new String[] { "nl_NL", "Info" } }),
+	Warning(new String[][] { new String[] { "en_US", "Warning" }, new String[] { "nl_NL", "Warning" } }),
+	Error(new String[][] { new String[] { "en_US", "Error" }, new String[] { "nl_NL", "Error" } }),
+	Critical(new String[][] { new String[] { "en_US", "Critical" }, new String[] { "nl_NL", "Critical" } });
 
 	private java.util.Map<String,String> captions;
 

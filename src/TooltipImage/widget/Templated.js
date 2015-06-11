@@ -1,3 +1,5 @@
+/*jslint white: true, nomen: true, plusplus: true */
+/*global logger, mx, mxui, mendix, dojo, require, console, define, module, TooltipImage */
 define([
 	"dijit/_TemplatedMixin",
 	"dojo/_base/declare"

@@ -6,11 +6,11 @@ package communitycommons.proxies;
 
 public enum DTAPMode
 {
-	DEVELOPMENT(new String[][] { new String[] { "en_US", "Development" } }),
-	TESTING(new String[][] { new String[] { "en_US", "Testing" } }),
-	ACCEPTANCE(new String[][] { new String[] { "en_US", "Acceptance" } }),
-	PRODUCTION(new String[][] { new String[] { "en_US", "Production" } }),
-	TRIAL(new String[][] { new String[] { "en_US", "Trial" } });
+	DEVELOPMENT(new String[][] { new String[] { "en_US", "Development" }, new String[] { "nl_NL", "Development" } }),
+	TESTING(new String[][] { new String[] { "en_US", "Testing" }, new String[] { "nl_NL", "Testing" } }),
+	ACCEPTANCE(new String[][] { new String[] { "en_US", "Acceptance" }, new String[] { "nl_NL", "Acceptance" } }),
+	PRODUCTION(new String[][] { new String[] { "en_US", "Production" }, new String[] { "nl_NL", "Production" } }),
+	TRIAL(new String[][] { new String[] { "en_US", "Trial" }, new String[] { "nl_NL", "Trial" } });
 
 	private java.util.Map<String,String> captions;
 

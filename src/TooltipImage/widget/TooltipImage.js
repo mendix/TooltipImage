@@ -1,4 +1,4 @@
-/*jslint white: true nomen: true plusplus: true */
+/*jslint white: true, nomen: true, plusplus: true */
 /*global logger, mx, mxui, mendix, dojo, require, console, define, module, TooltipImage */
 /**
 
@@ -12,23 +12,12 @@
 	@copyright : Mendix Technology BV
 	@license   : Apache License, Version 2.0, January 2004
 
-	Documentation
-    ========================
-	Describe your widget here.
-
 */
 
-(function() {
-    'use strict';
-
-    // test
-    require([
-
-        'mxui/widget/_WidgetBase', 'dijit/_Widget', 'dijit/_TemplatedMixin', 'mxui/widget/Image',
-        'mxui/dom', 'dojo/dom', 'dojo/query', 'dojo/dom-prop', 'dojo/dom-geometry', 'dojo/dom-class', 'dojo/dom-style', 'dojo/on', 'dojo/_base/lang', 'dojo/_base/declare', 'dojo/text', 'dojo/dom-attr',
-        'TooltipImage/widget/FormTooltip'
-
-    ], function (_WidgetBase, _Widget, _Templated, MxuiImage, domMx, dom, domQuery, domProp, domGeom, domClass, domStyle, on, lang, declare, text, domAttr) {
+define([
+		'dojo/_base/declare', 'mxui/widget/_WidgetBase', 'dijit/_Widget', 'dijit/_TemplatedMixin', 'mxui/widget/Image',
+	'dojo/_base/lang', 'dojo/dom-attr', 'dojo/text!TooltipImage/widget/templates/TooltipImage.html', 'TooltipImage/widget/FormTooltip'
+	], function (declare, _WidgetBase, _Widget, _Templated, MxuiImage, lang, domAttr, widgetTemplate, FormTooltip) {
 
         // Declare widget.
         return declare('TooltipImage.widget.TooltipImage', [ _WidgetBase, _Widget, _Templated ], {
@@ -41,8 +30,7 @@
 
             baseClass	: "formtooltipTooltipImage",
 
-            // Template path
-            templatePath: require.toUrl('TooltipImage/widget/templates/TooltipImage.html'),
+            templateString: widgetTemplate,
             
             tooltip		: null,
             viewer		: null,	
@@ -173,7 +161,6 @@
             },
 
             uninitialize : function() {
-                logger.debug(this.id + ".applyContext");
 
                 if (typeof this._dataContent[this.id]._tooltip !== 'undefined' && this._dataContent[this.id]._tooltip !== null){
                     this._dataContent[this.id]._tooltip.destroy();
@@ -185,5 +172,6 @@
 
         });
     });
-    
-}());
+require(["TooltipImage/widget/TooltipImage"], function () {
+	"use strict";
+});

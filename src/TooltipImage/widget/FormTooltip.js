@@ -1,5 +1,5 @@
-/*jslint white: true nomen: true plusplus: true */
-/*global logger, mx, mxui, mendix, dojo, require, console, define, module, formtooltip, dijit */
+/*jslint white: true, nomen: true, plusplus: true */
+/*global logger, mx, mxui, mendix, dojo, require, console, define, module, formtooltip, dijit, setTimeout,clearTimeout */
 /**
 
 	FormTooltip
@@ -18,16 +18,11 @@
 
 */
 
-(function() {
-    'use strict';
-
-    // test
-    require([
-
-		'mxui/widget/_WidgetBase', 'dijit/_Widget', 'dijit/_TemplatedMixin', 'TooltipImage/widget/MasterTooltip',
-        'mxui/dom', 'dojo/dom', 'dojo/query', 'dojo/dom-prop', 'dojo/dom-geometry', 'dojo/dom-class', 'dojo/dom-style', 'dojo/on', 'dojo/_base/lang', 'dojo/_base/declare', 'dojo/text', 'dojo/dom-attr', 'dijit/registry'
-
-    ], function (_WidgetBase, _Widget, _Templated, MasterTooltip, domMx, dom, domQuery, domProp, domGeom, domClass, domStyle, on, lang, declare, text, domAttr, registry) {
+define([
+		'dojo/_base/declare', 'mxui/widget/_WidgetBase', 'dijit/_Widget', 'dijit/_TemplatedMixin', 'TooltipImage/widget/MasterTooltip',
+        'mxui/dom', 'dojo/dom', 'dojo/_base/lang', 'dijit/registry'
+	],
+	   function (declare, _WidgetBase, _Widget, _Templated, MasterTooltip, domMx, dom, lang, registry) {
    
         // Declare widget.
         return declare('TooltipImage.widget.FormTooltip', [ _WidgetBase, _Widget, _Templated, MasterTooltip ], {
@@ -186,8 +181,7 @@
             }
             
         });
-        
-    });
-    
-    
-}());
+	});
+require(["TooltipImage/widget/FormTooltip"], function () {
+	"use strict";
+});

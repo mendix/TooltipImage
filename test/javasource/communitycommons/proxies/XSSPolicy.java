@@ -6,11 +6,13 @@ package communitycommons.proxies;
 
 public enum XSSPolicy
 {
-	TinyMCE(new String[][] { new String[] { "en_US", "TinyMCE" } }),
-	MySpace(new String[][] { new String[] { "en_US", "MySpace" } }),
-	eBay(new String[][] { new String[] { "en_US", "eBay" } }),
-	Slashdot(new String[][] { new String[] { "en_US", "Slashdot" } }),
-	anythinggoes(new String[][] { new String[] { "en_US", "Allow anything" } });
+	TinyMCE(new String[][] { new String[] { "en_US", "TinyMCE" }, new String[] { "nl_NL", "TinyMCE" } }),
+	MySpace(new String[][] { new String[] { "en_US", "MySpace" }, new String[] { "nl_NL", "MySpace" } }),
+	eBay(new String[][] { new String[] { "en_US", "eBay" }, new String[] { "nl_NL", "eBay" } }),
+	Slashdot(new String[][] { new String[] { "en_US", "Slashdot" }, new String[] { "nl_NL", "Slashdot" } }),
+	anythinggoes(new String[][] { new String[] { "en_US", "Allow anything" }, new String[] { "nl_NL", "Alles toestaan" } }),
+	BootstrapRTE(new String[][] { new String[] { "en_US", "Bootstrap Rich Text Editor" }, new String[] { "nl_NL", "Bootstrap Rich Text Editor" } }),
+	BootstrapRTE_nolink(new String[][] { new String[] { "en_US", "Bootstrap Rich Text Editor no hyperlink" }, new String[] { "nl_NL", "Bootstrap Rich Text Editor no hyperlink" } });
 
 	private java.util.Map<String,String> captions;
 
