@@ -3,7 +3,7 @@
 define([
 	"dojo/_base/declare", "TooltipImage/widget/Templated", 
 	"dojo/window", "dojo/dom-class", "dojo/dom-geometry",
-	"dijit/Tooltip", "dojo/text!mxui/widget/templates/Tooltip.html"
+	"dijit/Tooltip", "dojo/text!TooltipImage/widget/templates/Tooltip.html"
 ], function(declare, _Templated, dojoWindow, dojoClass, dojoGeometry, dijitTooltip, templateString) {
 
 	var _MasterTooltip = declare([ dijitTooltip._MasterTooltip, _Templated ], {
@@ -58,4 +58,7 @@ define([
 	});
 
 	return _MasterTooltip;
+});
+require(["TooltipImage/widget/MasterTooltip"], function () {
+	"use strict";
 });

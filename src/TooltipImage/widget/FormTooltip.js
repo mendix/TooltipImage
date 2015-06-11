@@ -19,10 +19,10 @@
 */
 
 define([
-		'dojo/_base/declare', 'mxui/widget/_WidgetBase', 'dijit/_Widget', 'dijit/_TemplatedMixin', 'TooltipImage/widget/MasterTooltip',
-        'mxui/dom', 'dojo/dom', 'dojo/_base/lang', 'dijit/registry'
+	'dojo/_base/declare', 'mxui/widget/_WidgetBase', 'dijit/_Widget', 'dijit/_TemplatedMixin', 'TooltipImage/widget/MasterTooltip',
+	'mxui/dom', 'dojo/dom', 'dojo/_base/lang', 'dijit/registry', "dojo/text!TooltipImage/widget/templates/Tooltip.html"
 	],
-	   function (declare, _WidgetBase, _Widget, _Templated, MasterTooltip, domMx, dom, lang, registry) {
+	   function (declare, _WidgetBase, _Widget, _Templated, MasterTooltip, domMx, dom, lang, registry, widgetTemplate) {
    
         // Declare widget.
         return declare('TooltipImage.widget.FormTooltip', [ _WidgetBase, _Widget, _Templated, MasterTooltip ], {
@@ -30,7 +30,7 @@ define([
             baseClass            : 'formtooltipFormTooltip',
 
             // Template path
-            templatePath: require.toUrl('TooltipLink/widget/templates/Tooltip.html'),
+            templateString: widgetTemplate,
 
             // External variables with default settings
             cssclass	         : '',
