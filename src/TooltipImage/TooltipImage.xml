@@ -20,16 +20,22 @@
 	  <category>Appearance</category>
       <description>Tooltip form</description>
     </property>
-	<property key="tooltippos" type="enumeration" defaultValue="below">
+	<property key="tooltippos" type="enumeration" defaultValue="belowcentered">
       <caption>Tooltip position</caption>
 	  <category>Appearance</category>
       <description>Tooltip position</description>
       <enumerationValues>
         <enumerationValue key="above">Above</enumerationValue>
         <enumerationValue key="after">After</enumerationValue>
-		<enumerationValue key="below">Below</enumerationValue>
+		    <enumerationValue key="below">Below</enumerationValue>
         <enumerationValue key="before">Before</enumerationValue>
-	</enumerationValues>
+        <enumerationValue key="abovecentered">Above Centered</enumerationValue>
+        <enumerationValue key="aftercentered">After Centered</enumerationValue>
+		    <enumerationValue key="belowcentered">Below Centered</enumerationValue>
+        <enumerationValue key="beforecentered">Before Centered</enumerationValue>
+        <enumerationValue key="abovealt">Above (Alternate)</enumerationValue>
+        <enumerationValue key="belowalt">Below (Alternate)</enumerationValue>
+	    </enumerationValues>
     </property>
   	<property key="imagedefault" type="image" required="false">
       <caption>Default image</caption>

@@ -1,11 +1,9 @@
-Buildfile: C:\Mendix\Widgets\GitHub\TooltipImage\test\deployment\build_core.xml
+Buildfile: C:\Users\PrestonA\Local\Github\TooltipImage\test\deployment\build_core.xml
 
 clean:
-   [delete] Deleting directory C:\Mendix\Widgets\GitHub\TooltipImage\test\deployment\model
-   [delete] Deleting directory C:\Mendix\Widgets\GitHub\TooltipImage\test\deployment\run
 
 BUILD SUCCESSFUL
-Total time: 1 second
+Total time: 0 seconds
 
 
 

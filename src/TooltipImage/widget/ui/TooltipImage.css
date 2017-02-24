@@ -10,17 +10,39 @@
     pointer-events: none;
 }
 
-.mx-tooltip .dijitTooltipContainer:after {
-    border-color: rgba(136, 183, 213, 0);
-    border-right-color: #26323D;
-    border-width: 7px;
-    margin-top: -7px;
+.dijitTooltipLeft .dijitTooltipContainer:after {
+  border-color: rgba(136, 183, 213, 0);
+  border-left-color: #26323D;
+  border-width: 7px;
+  margin-top: -7px;
+  right: -14px;
 }
-.mx-tooltip .dijitTooltipContainer:before {
+
+.dijitTooltipRight .dijitTooltipContainer:before {
     border-color: rgba(38, 50, 61, 0);
     border-right-color: #26323D;
     border-width: 8px;
     margin-top: -8px;
+}
+
+div.dijitTooltipLeft {
+  margin-left: -20px;
+  margin-top: -11px;
+  margin-right: 20px;
+}
+
+div.dijitTooltipRight {
+  margin-left: 20px;
+  margin-top: -11px;
+  margin-right: -20px;
+}
+
+div.dijitTooltipAbove {
+  margin-top: -30px;
+}
+
+div.dijitTooltipBelow {
+  margin-top: 20px;
 }
 
 .mx-tooltip .dijitTooltipConnector {
