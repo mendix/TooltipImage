@@ -1,7 +1,7 @@
 /*jslint white: true, nomen: true, plusplus: true */
 /*global logger, mx, mxui, mendix, dojo, require, console, define, module, TooltipImage */
 define([
-	"dojo/_base/declare", "TooltipImage/widget/Templated", 
+	"dojo/_base/declare", "TooltipImage/widget/Templated",
 	"dojo/window", "dojo/dom-class", "dojo/dom-geometry",
 	"dijit/Tooltip", "dojo/text!TooltipImage/widget/templates/Tooltip.html"
 ], function(declare, _Templated, dojoWindow, dojoClass, dojoGeometry, dijitTooltip, templateString) {
@@ -52,6 +52,7 @@ define([
 			// see dijit/_MasterTooltip.js line 40
 			this.aroundNode = null;
 
+			logger.debug("Calling inherited with " + position);
 			this.inherited(arguments, [content, aroundNode, position]);
 			dojoClass.add(this.domNode, "mx-tooltip");
 		}

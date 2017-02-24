@@ -23,7 +23,7 @@ define([
 	'mxui/dom', 'dojo/dom', 'dojo/_base/lang', 'dijit/registry', "dojo/text!TooltipImage/widget/templates/Tooltip.html"
 	],
 	   function (declare, _WidgetBase, _Widget, _Templated, MasterTooltip, domMx, dom, lang, registry, widgetTemplate) {
-   
+
         // Declare widget.
         return declare('TooltipImage.widget.FormTooltip', [ _WidgetBase, _Widget, _Templated, MasterTooltip ], {
 
@@ -39,7 +39,7 @@ define([
             tooltipform	         : '',
             showdelay	         : 0,
             hidedeley            : 0,
-            
+
             // Internal variables used.
             _hideTimer	         : null,
             _showTimer	         : null,
@@ -47,7 +47,7 @@ define([
             _previousContext	 : null,
             _currentContext	     : null,
             _topWidgets	         : null,
-            
+
             _dataContainer       : {},
 
             postCreate : function() {
@@ -55,7 +55,7 @@ define([
 
                 this.connect(this.targetnode, 'onmouseover', '_onShow');
                 this.connect(this.targetnode, 'onmouseout', '_onHide');
-                
+
                 this.connect(mxui.widget, 'hideTooltip', this, '_hideTooltip');
             },
 
@@ -92,7 +92,7 @@ define([
             _fetchForm : function() {
                 var node = null,
                     ioBind = null;
-                
+
                 logger.debug(this.id + '.fetchForm');
 
                 if(this._topWidgets) {
@@ -105,7 +105,7 @@ define([
                         callback: lang.hitch(this, function(form) {
                             var i = null,
                                 widget;
-                            
+
                             this._tooltipNode = node.firstChild;
                             this._topWidgets = registry.findWidgets(this._tooltipNode)[0];
 
@@ -175,11 +175,11 @@ define([
             uninitialize : function() {
                 logger.debug(this.id + '.uninitialize');
 
-                if (typeof this._tooltipNode !== 'undefined' && this._tooltipNode) {
-                    mxui.widget.destroyChildren(this._tooltipNode);
+                if (typeof this._topWidgets !== 'undefined' && this._topWidgets) {
+										this._topWidgets.destroy();
                 }
             }
-            
+
         });
 	});
 require(["TooltipImage/widget/FormTooltip"], function () {
